@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row row-cols-2 align-items-center">
+        <div class="col-6 text-right" style="height:100px">
+            <a href="{{ url_for('user.change_profile_pic_en') }}">
+                <img class="rounded-circle article-img"
+                     src="{{ url_for('static', filename='profile_pics/'+user.image_file) }}"
+                     style="height:100%; width:auto">
+            </a>
+        </div>
+
+        <div class="col-6 text-left ">
+            <div class="row">
+                <h2 class="white-text">{{ user.username }}</h2>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <h4 class="white-text text-center">{{message}}</h4>
+    <br>
+    {%if flag == 1 %}
+
+    <h4 class="white-text" style="color:white">Do you like our VIP contents?</h4>
+    <h4 class="white-text" style="color:white">Use your invitation code, let a new user submit your invitation code to get additional free vip service.</h4>
+    <br>
+    <p class="white-text">Your invitation code for VIP1: <span style="color: #00CCBC">{{code1}}</span></p>
+    <p class="white-text">Your invitation code for VIP2: <span style="color: #00CCBC">{{code2}}</span></p>
+    <br/>
+    <h4 class="white-text" style="color:white">Or buy new VIP service.</h4>
+    <a class="btn btn-outline-light text-left" href="{{url_for('webapp.buy_vip')}}">Buy your VIP</a>
+    {% endif %}
+
+    {% if flag == 2 %}
+    <h4 class="white-text" style="color:white">You currently have free VIP privileges, please click the link below to get your free VIP service.</h4>
+    <a class="btn btn-outline-light text-left" href="{{url_for('webapp.VIP_check_en')}}">Get free VIP service</a>
+    {%endif%}
+
+</div>
+{% endblock content %}

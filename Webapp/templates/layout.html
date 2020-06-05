@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="汇聚来自亚洲和欧美的最美丽性感的女神|BB-女神网/Find the most beautiful and sexy muses all over the world|BB-Muses" >
+    <meta name="keywords" content="亚洲美女, 欧美美女, Asian beauties, European beauties, 性感尤物, Beauties, 性感美女,Sexy beauties, Sexy ladies, 黑丝, 御姐, " >
+    <link rel="icon" href="../../static/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='customized_css/main.css') }}" charset="utf-8">
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet"/>
+    <meta name="baidu-site-verification" content="TbiStILV8S" />
+    <meta name="sogou_site_verification" content="rFFVmZOScI"/>
+
+    {% if title %}
+    <title>My Muses - {{ title }}</title>
+    {% else %}
+    <title>My Muses</title>
+    {% endif %}
+
+</head>
+<style>
+
+</style>
+
+<body style="background: linear-gradient(to left, #8942a8, #bd382d);">
+<header class="site-header">
+    <div class="navbar navbar-expand-md navbar-dark bg-dark box-shadow fixed-top"
+         style="background: linear-gradient(to left, #8942a8, #bd382d);">
+        <div class="container">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                <strong id="app_name">My Muses</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                {% if lang == 'en'%}
+                <div class="navbar-nav mr-auto">
+                    <a class="btn btn-outline-light text-left" href="{{ url_for('webapp.VIP_check_en') }}">VIP</a>
+                </div>
+                <div class="navbar-nav" style="position: absol; left: 45%;">
+                    <form class="form-inline my-2 my-lg-0" method="POST" action="{{url_for('webapp.search')}}">
+                        <input id="search_welcome" class="form-control mr-sm-2" type="text"
+                               placeholder="Type to search..."
+                               aria-label="Search"
+                               name="keyword" style="border-radius:10px;">
+                    </form>
+                </div>
+                {% else %}
+                <div class="navbar-nav mr-auto">
+                    <a class="btn btn-outline-light text-left" href="{{ url_for('webapp.VIP_check_cn') }}">VIP</a>
+                </div>
+                <div class="navbar-nav" style="position: absol; left: 45%;">
+                    <form class="form-inline my-2 my-lg-0" method="POST" action="{{url_for('webapp.search')}}">
+                        <input id="search_welcome" class="form-control mr-sm-2" type="text"
+                               placeholder="搜索..."
+                               aria-label="Search"
+                               name="keyword" style="border-radius:10px;">
+                    </form>
+                </div>
+                {% endif %}
+
+                <div class="navbar-nav">
+                    {% if lang == 'en' %}
+                    {% if current_user.is_authenticated %}
+                    <a id="account_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.account_en') }}">Account</a>
+                    <a id="logout_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.logout_en') }}">Logout</a>
+                    {% else %}
+                    <a id="login_button" class="btn btn-outline-light text-left" href="{{ url_for('user.login_en') }}">Login</a>
+                    <a id="register_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.register_en') }}">Register</a>
+                    {% endif %}
+                    {% else %}
+                    {% if current_user.is_authenticated %}
+                    <a id="account_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.account_cn') }}">Account</a>
+                    <a id="logout_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.logout_cn') }}">Logout</a>
+                    {% else %}
+                    <a id="login_button" class="btn btn-outline-light text-left" href="{{ url_for('user.login_cn') }}">Login</a>
+                    <a id="register_button" class="btn btn-outline-light text-left"
+                       href="{{ url_for('user.register_cn') }}">Register</a>
+                    {% endif %}
+                    {% endif %}
+                </div>
+                {% block languagecontent %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main role="main" class="container">
+    <a class="btn btn-outline-light" id="ToTopButton" href="#" style="position:fixed; z-index: 99998;
+    right:15%; bottom: 10%; background-color:rgba(0,0,0,0.2)">Back to top</a>
+
+    <div class="col-md-12 text-center">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            {% block category%}{% endblock %}
+        </div>
+        <div class="col-md-12">
+            {% block gotocategory%}{% endblock %}
+        </div>
+        <div class="col-md-12">
+            {% block content %}{% endblock %}
+            <div class="border-top pt-3">
+                <p class="white-text text-center">&copy; 2019-2020</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/languages-mod.js')}}"></script>
+<script>
+$(function(){
+	//根据不同浏览设备，加载不同图片
+	pic_html();
+	function pic_html(){
+		if($(window).width()<720){
+			$("#asia_category").attr("src","../../static/category_pics/Asia_1080_1800.jpg");
+            $("#usa_category").attr("src","../../static/category_pics/USA_1080_1800.jpg");
+            $("#cartoon_category").attr("src","../../static/category_pics/Cartoon_1080_1800.jpg");
+
+
+		}else{
+			$("#asia_category").attr("src","../../static/category_pics/Asia_1111_520.jpg");
+            $("#usa_category").attr("src","../../static/category_pics/USA_1111_520.jpg");
+            $("#cartoon_category").attr("src","../../static/category_pics/Cartoon_1111_520.jpg");
+		}
+	}
+	//当调整浏览器窗口的大小时，发生 resize 事件
+	$(window).resize(function(){
+		pic_html();
+	})
+})
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>
