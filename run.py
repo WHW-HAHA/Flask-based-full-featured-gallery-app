@@ -8,14 +8,11 @@ Naming standard:
     name of a variable: abcd_abcd
     name of a instantiation: abcd_abcd
     # in English is the comments
-    # 中文的话是需要特别注意的地方以及需要检查的地方
 """
 
 from Webapp import create_app
-from flask_sitemap import Sitemap
 
 if __name__== '__main__':
     app = create_app()
     print(app.root_path)
-    # app.run(debug = False, host= '0.0.0.0')
-    app.run(debug = False)
+    app.run(debug = False, host= '0.0.0.0')
