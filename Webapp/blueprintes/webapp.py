@@ -8,7 +8,6 @@ Naming standard:
     name of a variable: abcd_abcd
     name of a instantiation: abcd_abcd
     # in English is the comments
-    # 中文的话是需要特别注意的地方以及需要检查的地方
 """
 
 from flask import send_from_directory, Blueprint, render_template, redirect, url_for, flash,request
