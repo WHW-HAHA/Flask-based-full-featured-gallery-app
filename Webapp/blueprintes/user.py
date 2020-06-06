@@ -13,7 +13,7 @@ Naming standard:
 from flask import Blueprint, render_template, redirect, flash, url_for, session, jsonify, request
 from flask_login import current_user, login_user, logout_user, login_required
 from Webapp.forms.user import RegistrationForm, InvitationCodeCheckForm, LoginForm, UpdateProfileForm, UpdatePasswordForm, UpdateProfilePicForm, RequestResetForm, ResetPasswordForm
-from Webapp.models import User, Deal, Post, Category
+from Webapp.models import User, Post, Category
 from Webapp import db, bcrypt, mail
 from flask_mail import Message
 import os
@@ -128,41 +128,19 @@ def code_submit_cn():
 def login_en():
     if current_user.is_authenticated:
         return redirect(url_for('webapp.welcome'))
-    form = LoginForm()
-    if form.validate_on_submit():
-        user = User.query.filter_by(email = form.email.data).first() # remember to get the first item
-        # here not able to check the hashed user password yet if user and bcrypt.check_password_hash(user.password, form.password.data):
-        if user and bcrypt.check_password_hash(user.password, form.password.data):
-            login_user(user, remember=form.remember.data)
-            # next_page = request.args.get('next')
-        #     return redirect(next_page) if next_page else redirect(url_for('home'))
-        # if user and user.password == form.password.data:
-        #     login_user(user, remember = form.remember.data)
-            flash('Enjoy your exploration！', 'success')
-            return redirect(url_for('webapp.welcome'))
-        else:
-            flash('Login unsuccessful, please check email and password!', 'danger')
-    return render_template('login.html', title='Login', form=form)
+    user = User.query.filter_by(email = 'FastUnicorn@github.com').first() # remember to get the first item
+    login_user(user)
+    flash('Enjoy your exploration！', 'success')
+    return redirect(url_for('webapp.welcome'))
 
 @user_bp.route('/cn/login', methods = ['GET', 'POST'])
 def login_cn():
     if current_user.is_authenticated:
         return redirect(url_for('webapp.welcome'))
-    form = LoginForm()
-    if form.validate_on_submit():
-        user = User.query.filter_by(email = form.email.data).first() # remember to get the first item
-        # here not able to check the hashed user password yet if user and bcrypt.check_password_hash(user.password, form.password.data):
-        if user and bcrypt.check_password_hash(user.password, form.password.data):
-            login_user(user, remember=form.remember.data)
-            # next_page = request.args.get('next')
-        #     return redirect(next_page) if next_page else redirect(url_for('home'))
-        # if user and user.password == form.password.data:
-        #     login_user(user, remember = form.remember.data)
-            flash('请尽情浏览！', 'success')
-            return redirect(url_for('webapp.welcome'))
-        else:
-            flash('未成功登陆， 请检查注册邮箱和密码！', 'danger')
-    return render_template('login.html', title='登录', form=form)
+    user = User.query.filter_by(email = 'FastUnicorn@github.com').first() # remember to get the first item
+    login_user(user)
+    flash('您已登录成功！', 'success')
+    return redirect(url_for('webapp.welcome'))
 
 def xml_parser(text):
     dic = {}

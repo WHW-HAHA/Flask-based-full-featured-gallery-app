@@ -11,11 +11,11 @@ Naming standard:
     # 中文的话是需要特别注意的地方以及需要检查的地方
 """
 
-from flask import Blueprint, render_template, flash, request
+from flask import Blueprint, render_template, request
 from flask_login import current_user
-from Webapp.models import Post, Category, User
+from Webapp.models import Post, User
 from Webapp.extensions import db
-from sqlalchemy import and_, or_
+from sqlalchemy import or_
 
 post_bp = Blueprint('post', __name__)
 
@@ -23,7 +23,8 @@ post_bp = Blueprint('post', __name__)
 def post_en(post_id):
     post = Post.query.get_or_404(post_id)
     picture_list = post.picture_list
-    picture_list = picture_list.split('\\')
+    picture_list = picture_list.split('+')
+    print(picture_list)
     name = post.title_en.split('(')[0]
     # get posts with similar category, and show 5 of them
     # category = post.categories
@@ -55,13 +56,13 @@ def post_en(post_id):
             return render_template('404_not_allowed_to_visit.html')
 
     else:
-        return render_template('en_post_content.html', title=post.title_en, post=post, picture_list = picture_list[:-1], like_posts = like_posts)
+        return render_template('en_post_content.html', title=post.title_en, post=post, picture_list = picture_list[:-1], like_posts = like_posts[0:8])
 
 @post_bp.route("/cn/<post_id>") # post_id 在这个route函数被调用时传入
 def post_cn(post_id):
     post = Post.query.get_or_404(post_id)
     picture_list = post.picture_list
-    picture_list = picture_list.split('\\')
+    picture_list = picture_list.split('+')
     name = post.title_cn.split('(')[0]
     # get posts with similar category, and show 5 of them
     # category = post.categories
@@ -93,7 +94,7 @@ def post_cn(post_id):
             return render_template('404_not_allowed_to_visit.html')
 
     else:
-        return render_template('cn_post_content.html', title=post.title_cn, post=post, picture_list = picture_list[:-1], like_posts = like_posts[0:9])
+        return render_template('cn_post_content.html', title=post.title_cn, post=post, picture_list = picture_list[:-1], like_posts = like_posts[0:8])
 
 
 @post_bp.route('/en/<post_id>/add_favourite', methods = ['POST'])

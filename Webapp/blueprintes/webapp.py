@@ -11,18 +11,16 @@ Naming standard:
     # 中文的话是需要特别注意的地方以及需要检查的地方
 """
 
-from flask import send_from_directory, Blueprint, request, render_template, flash, redirect, url_for, flash, session, jsonify, request
+from flask import send_from_directory, Blueprint, render_template, redirect, url_for, flash,request
 from Webapp.models import Post, User, Category
-from sqlalchemy import and_, or_
-from flask_login import current_user, login_user
+from sqlalchemy import or_
+from flask_login import current_user
 from Webapp.extensions import db
 from datetime import datetime, timedelta
 import json
-from sqlalchemy.orm import sessionmaker
-import random
 webapp_bp = Blueprint('webapp', __name__)
 
-# default language is Chinese
+# default language is English
 
 global lang
 lang = 'en'
@@ -79,18 +77,6 @@ def go_to_category(name):
             return render_template('en_category_content.html', title = 'Category 1', category=category, posts=posts)
         else:
             return render_template('cn_category_content.html', title = '分类一', category=category , posts=posts)
-
-    if name == 'Europe&USA':
-        name = 'Europe & USA'
-        category_name = name
-        category = Category.query.filter_by(name=category_name).first()
-        posts = category.posts
-        if lang == 'en':
-            return render_template('en_category_content.html', title = 'Category 2', category=category, posts=posts)
-        else:
-            category.name = '欧美'
-            return render_template('cn_category_content.html', title = '分类二', category=category, posts=posts)
-
     else:
         category_name = name
         category = Category.query.filter_by(name=category_name).first()

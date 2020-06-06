@@ -168,43 +168,43 @@ top: 10%;
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img id="asia_category"
+            <img id="category1"
                  style="height: 100%;"
-                 src="../../static/category_pics/Asia_1080_1800.jpg"
+                 src="https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png"
                  alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1 class="white-text asia_category_name">{{category_asia.name}}</h1>
                     <p class="white-text asia_category_description">{{category_asia.description}}</p>
-                    <p class="white-text"><a class="btn btn-outline-light see-more" href="#Asia" role="button">See
+                    <p class="white-text"><a class="btn btn-outline-light see-more" href="#Category1" role="button">See
                         more</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img id="usa_category"
-                 src="../../static/category_pics/USA_1080_1800.jpg"
+            <img id="category2"
+                 src="https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png"
                  alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1 class="white-text usa_category_name">{{category_usa.name}}</h1>
                     <p class="white-text usa_category_description">{{category_usa.description}}</p>
-                    <p class="white-text "><a class="btn btn-outline-light see-more" href="#USA" role="button">See
+                    <p class="white-text "><a class="btn btn-outline-light see-more" href="#Category2" role="button">See
                         more</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img id="cartoon_category"
-                 src="../../static/category_pics/Cartoon_1080_1800.jpg"
+            <img id="category3"
+                 src="https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png"
                  alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
                     <h1 class="white-text cartoon_category_name">{{category_cartoon.name}}</h1>
                     <p class="white-text cartoon_category_description">{{category_cartoon.description}}</p>
-                    <p class="white-text"><a class="btn btn-outline-light see-more" href="#Cartoon" role="button">See
+                    <p class="white-text"><a class="btn btn-outline-light see-more" href="#Category3" role="button">See
                         more</a>
                     </p>
                 </div>
@@ -228,16 +228,16 @@ top: 10%;
 <br>
 <div class="row row-cols-4" style="margin:0px">
     <div class="col-3 text-center">
-        <a href="#Asia" class="btn btn-outline-light categoryname"
-           style="font-weight:bold; background-color: rgba(0,0,0,0.2); margin:0">Asia</a>
+        <a href="#Category1" class="btn btn-outline-light categoryname"
+           style="font-weight:bold; background-color: rgba(0,0,0,0.2); margin:0">Category 1</a>
     </div>
     <div class="col-3 text-center">
-        <a href="#USA" class="btn btn-outline-light categoryname"
-           style="font-weight:bold; background-color: rgba(0,0,0,0.2);margin:0;">USA&EU</a>
+        <a href="#Category2" class="btn btn-outline-light categoryname"
+           style="font-weight:bold; background-color: rgba(0,0,0,0.2);margin:0;">Category 2</a>
     </div>
     <div class="col-3 text-center">
-        <a href="#Cartoon" class="btn btn-outline-light categoryname"
-           style="font-weight:bold; background-color: rgba(0,0,0,0.2); margin:0;">Cartoon</a>
+        <a href="#Category3" class="btn btn-outline-light categoryname"
+           style="font-weight:bold; background-color: rgba(0,0,0,0.2); margin:0;">Category 3</a>
     </div>
     <div class="col-3 text-center">
         <a href="#" class="btn btn-outline-light categoryname"
@@ -460,10 +460,9 @@ top: 10%;
 </div>
 <br/>
 
-<!--section asia-->
-<a id="Asia" class="btn btn-outline-light asia_category_name"
+<a id="Category1" class="btn btn-outline-light asia_category_name"
    style="font-size:xx-large;font-weight:bold;background-color: rgba(0,0,0,0.2)"
-   href="{{url_for('webapp.go_to_category', name='Asia')}}">Asia</a>
+   href="{{url_for('webapp.go_to_category', name='Category1')}}">Category 1</a>
 <p></p>
 <HR color="white">
 <div class="row">
@@ -664,16 +663,15 @@ top: 10%;
         <p></p>
         <a class="btn btn-outline-light see-more"
            style="font-size:xx-large;font-weight:bold;background-color: rgba(0,0,0,0.2)"
-           href="{{url_for('webapp.go_to_category', name='Asia')}}">Explore more</a>
+           href="{{url_for('webapp.go_to_category', name='Category1')}}">Explore more</a>
     </div>
 </div>
 </div>
 <br/>
 
-<!--USA-->
-<a id="USA" class="btn btn-outline-light usa_category_name"
+<a id="Category2" class="btn btn-outline-light usa_category_name"
    style="font-size:xx-large;font-weight:bold;background-color: rgba(0,0,0,0.2)"
-   href="{{url_for('webapp.go_to_category', name='Europe&USA')}}">Europe & USA</a>
+   href="{{url_for('webapp.go_to_category', name='Category2')}}">Category 2</a>
 <p></p>
 <HR color="white">
 <div class="row">
@@ -874,17 +872,16 @@ top: 10%;
         <p></p>
         <a class="btn btn-outline-light see-more"
            style="font-size:xx-large;font-weight:bold; background-color: rgba(0,0,0,0.2)"
-           href="{{url_for('webapp.go_to_category', name='Europe&USA')}}">Explore
+           href="{{url_for('webapp.go_to_category', name='Category2')}}">Explore
             more</a>
     </div>
 </div>
 </div>
 <br/>
 
-<!--Cartoon section-->
-<a id="Cartoon" class="btn btn-outline-light cartoon_category_name"
+<a id="Category3" class="btn btn-outline-light cartoon_category_name"
    style="font-size:xx-large;font-weight:bold; background-color: rgba(0,0,0,0.2)"
-   href="{{url_for('webapp.go_to_category', name='Cartoon')}}">Cartoon</a>
+   href="{{url_for('webapp.go_to_category', name='Category3')}}">Category 3</a>
 <p></p>
 <HR color="white">
 <div class="row">
@@ -1083,7 +1080,7 @@ top: 10%;
         <p></p>
         <a class="btn btn-outline-light see-more"
            style="font-size:xx-large;font-weight:bold; background-color: rgba(0,0,0,0.2)"
-           href="{{url_for('webapp.go_to_category', name='Cartoon')}}">Explore
+           href="{{url_for('webapp.go_to_category', name='Category3')}}">Explore
             more</a>
     </div>
 </div>
@@ -1100,15 +1097,15 @@ $(function(){
 	pic_html();
 	function pic_html(){
 		if($(window).width()<720){
-			$("#asia_category").attr("src","../../static/category_pics/Asia_1080_1800.jpg");
-            $("#usa_category").attr("src","../../static/category_pics/USA_1080_1800.jpg");
-            $("#cartoon_category").attr("src","../../static/category_pics/Cartoon_1080_1800.jpg");
+			$("#category1").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
+            $("#category2").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
+            $("#category3").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
 
 
 		}else{
-			$("#asia_category").attr("src","../../static/category_pics/Asia_1111_520.jpg");
-            $("#usa_category").attr("src","../../static/category_pics/USA_1111_520.jpg");
-            $("#cartoon_category").attr("src","../../static/category_pics/Cartoon_1111_520.jpg");
+			$("#category1").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
+            $("#category2").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
+            $("#category3").attr("src","https://user-images.githubusercontent.com/43483189/83896105-eb4c6d00-a753-11ea-8628-4699b84616a6.png");
 		}
 	}
 	//当调整浏览器窗口的大小时，发生 resize 事件

@@ -149,7 +149,7 @@ def fake_post():
                     content_en = 'Content',
                     date_posted= datetime.utcnow()+timedelta(hours = random.randint(1,10)),
                     avater='https://user-images.githubusercontent.com/43483189/83882475-76bd0280-a742-11ea-9329-6c196c1f58bf.png',
-                    picture_list='https://user-images.githubusercontent.com/43483189/83882595-a409b080-a742-11ea-9e4e-2d0a84258029.png//'*30,
+                    picture_list='https://user-images.githubusercontent.com/43483189/83882595-a409b080-a742-11ea-9e4e-2d0a84258029.png+'*30,
                     classification=classification,
                     source=source,
                     )
