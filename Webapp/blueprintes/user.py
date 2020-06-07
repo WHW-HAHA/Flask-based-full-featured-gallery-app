@@ -127,7 +127,7 @@ def code_submit_cn():
 def login_en():
     if current_user.is_authenticated:
         return redirect(url_for('webapp.welcome'))
-    user = User.query.filter_by(email = 'FastUnicorn@github.com').first() # remember to get the first item
+    user = User.query.filter_by(email = 'Demo@demo.com').first() # remember to get the first item
     login_user(user)
     flash('Enjoy your exploration！', 'success')
     return redirect(url_for('webapp.welcome'))
@@ -136,7 +136,7 @@ def login_en():
 def login_cn():
     if current_user.is_authenticated:
         return redirect(url_for('webapp.welcome'))
-    user = User.query.filter_by(email = 'FastUnicorn@github.com').first() # remember to get the first item
+    user = User.query.filter_by(email = 'Demo@demo.com').first() # remember to get the first item
     login_user(user)
     flash('您已登录成功！', 'success')
     return redirect(url_for('webapp.welcome'))

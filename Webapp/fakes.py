@@ -89,7 +89,7 @@ def update_post():
                     date_posted= datetime.utcnow()+timedelta(hours = random.randint(1,10)),
                     avater='https://user-images.githubusercontent.com/43483189/83882475-76bd0280-a742-11ea-9329-6c196c1f58bf.png',
                     picture_list=['https://user-images.githubusercontent.com/43483189/83882595-a409b080-a742-11ea-9e4e-2d0a84258029.png']*30,
-                    classification=classification,
+                    classification=random.choice(['normal', 'vip1', 'vip2']),
                     source=source,
                     )
         post.categories.append(category_en)
@@ -149,7 +149,7 @@ def fake_post():
                     date_posted= datetime.utcnow()+timedelta(hours = random.randint(1,10)),
                     avater='https://user-images.githubusercontent.com/43483189/83882475-76bd0280-a742-11ea-9329-6c196c1f58bf.png',
                     picture_list='https://user-images.githubusercontent.com/43483189/83882595-a409b080-a742-11ea-9e4e-2d0a84258029.png+'*30,
-                    classification=classification,
+                    classification=random.choice(['normal', 'vip1', 'vip2']),
                     source=source,
                     )
         post.categories.append(category_en)
