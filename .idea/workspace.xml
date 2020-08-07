@@ -2,9 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8a578f-692b-495d-849e-2a2555f68da6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Cathry Li (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Cathry Li (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Celine Farach (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Celine Farach (6).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Celine Farach (7).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Chen Nuanyang (10).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Chen Nuanyang (6).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Chen Nuanyang (7).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Chen Nuanyang (8).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Chen Nuanyang (9).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Collection of USA &amp; Europen beauties (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Collection of USA &amp; Europen beauties (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Collection of USA &amp; Europen beauties (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Collection of USA &amp; Europen beauties (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Collection of USA &amp; Europen beauties (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Dasha Taran (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Emily Ratajkowski (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Emily Ratajkowski (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Go Younjung (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Go Younjung (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Hon Suzu (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Hon Suzu (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Jessica Clements  (6).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Jessica Clements  (7).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Jessica Clements  (8).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Jessica Clements  (9).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Lauren Summer (10).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Lauren Summer (6).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Lauren Summer (7).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Lauren Summer (8).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Lauren Summer (9).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/MarinaBondarko (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Master piece - chapter 1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Master piece - chapter 2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Reislin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Wanglin (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Wanglin (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Wanglin (6).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Old/Yiyan (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/10.o_nl44_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/11.master_piece1_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/12.master_piece 2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/1cathrynli_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/2.yiyan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/3.chennuanyang_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/4.clinefarach_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/4.goyounjung_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/5.honsuzu.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/5heylaurensummer_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/6.wangwangxiaoxiao_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/6marinabondarko.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/7.tarrrn_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/7vip1_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/8.jessicaclements_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/8reislinvip2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/deployed/9.emily_ratajkowski.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/Raw/to_deploy/13.master_piece 3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Cathry Li (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Cathry Li (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Celine Farach (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Celine Farach (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Celine Farach (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Celine Farach (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Celine Farach (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Chen Nuanyang (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Chen Nuanyang (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Chen Nuanyang (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Chen Nuanyang (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Chen Nuanyang (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Collection of o_nl44‘s paints   (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Collection of o_nl44‘s paints   (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Dasha Taran (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Dasha Taran (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Emily Ratajkowski (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Emily Ratajkowski (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Go Younjung (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Go Younjung (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Hon Suzu (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Hon Suzu (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Jessica Clements  (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Jessica Clements  (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Jessica Clements  (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Jessica Clements  (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Jessica Clements  (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Lauren Summer (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Lauren Summer (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Lauren Summer (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Lauren Summer (4).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Lauren Summer (5).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/MarinaBondarko (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/MarinaBondarko (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/10.o_nl44_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/11.master_piece1_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/12.master_piece 2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/1cathrynli_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/2.yiyan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/3.chennuanyang_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/4.clinefarach_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/4.goyounjung_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/5.honsuzu.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/5heylaurensummer_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/6.wangwangxiaoxiao_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/6marinabondarko.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/7.tarrrn_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/7vip1_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/8.jessicaclements_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/8reislinvip2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Raw/9.emily_ratajkowski.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Wanglin (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Wanglin (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Wanglin (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Yiyan (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Yiyan (2).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Yiyan (3).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webapp/Data/deployed/Yiyan (4).csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state relative-caret-position="379">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -41,23 +153,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="230">
-                <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <first_editor relative-caret-position="532">
+                <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/Requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -65,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="35625">
               <caret line="1934" selection-start-line="1934" selection-end-line="1934" />
             </state>
           </provider>
@@ -74,7 +186,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/_compat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="722">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -101,7 +213,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="2166">
               <caret line="130" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
@@ -161,16 +273,16 @@
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/Webapp/fakes.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$USER_HOME$/Desktop/Requirements.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="630" />
-    <option name="y" value="67" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="819" />
+    <option name="y" value="84" />
+    <option name="width" value="1936" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -236,8 +348,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1780822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,45 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/webapp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/_compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="1934" selection-start-line="1934" selection-end-line="1934" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
@@ -521,10 +597,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35625">
+          <caret line="1934" selection-start-line="1934" selection-end-line="1934" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/flask/_compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Webapp/blueprintes/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="379">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -538,17 +656,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="230">
-            <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <first_editor relative-caret-position="532">
+            <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
