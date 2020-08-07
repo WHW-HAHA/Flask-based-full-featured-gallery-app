@@ -108,7 +108,6 @@ def fake_post():
         #         csvDF = pd.read_csv(csv, delimiter=';', encoding='utf_8_sig')
         # except:
         csvDF = pd.read_csv(csv, delimiter=';', encoding='utf_8_sig')
-        print(csvDF)
         link_list = csvDF['list'].dropna().tolist()
         avater_list = csvDF['avater'].dropna().tolist()
         truncation = floor(len(link_list)/len(avater_list))
@@ -188,12 +187,25 @@ def fake_user(count = 50):
                     invitation_code_vip1 = generate_verification_code(),
                     invitation_code_vip2 = generate_verification_code()
                     )
-
         for j in range(random.randint(1, 5)):
             post = Post.query.get(random.randint(1, Post.query.count()))
             if post not in user.like:
                 user.like.append(post)
     db.session.commit()
+
+def create_demo_user():
+    demo_user = User(username='Demo',
+                email='Demo@demo.com',
+                password='Demo',
+                membership='none',
+                vip1= 'none',
+                vip2= 'none',
+                invitation_code_vip1=generate_verification_code(),
+                invitation_code_vip2=generate_verification_code()
+                )
+    db.session.add(demo_user)
+    db.session.commit()
+
 
 def generate_verification_code():
     code_list = []

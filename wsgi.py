@@ -22,7 +22,7 @@ import os
 
 def Forge(app):
     ''' Create fake data '''
-    from Webapp.fakes import fake_admin, fake_user, fake_category, fake_deal, fake_post, fake_count
+    from Webapp.fakes import fake_admin, fake_user, fake_category, fake_deal, fake_post, fake_count, create_demo_user
     from Webapp import db
     import click
 
@@ -42,6 +42,9 @@ def Forge(app):
         click.echo('Generating users')
         fake_user()
 
+        click.echo('Create demo user')
+        create_demo_user()
+
         click.echo('Generating deals')
         fake_deal()
 
@@ -54,5 +57,5 @@ from Webapp import create_app
 
 app = create_app()
 Forge(app)
-app.run(debug = False, host='0.0.0.0')
+app.run(debug = False, port=800)
 
