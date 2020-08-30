@@ -4,8 +4,6 @@
 A flask based generic platform to deploy gallery-like app for commercial or non-commercial usage
 ![Welcome page](https://user-images.githubusercontent.com/43483189/89638501-3a299680-d8ac-11ea-953d-ca34a2801e6c.png)
 *Generic platform*
-![Instance](https://user-images.githubusercontent.com/43483189/89644273-d4dba280-d8b7-11ea-97d9-8fc46870e0b8.png)
-*A Deployment*
 ### Features
 - User register, login, logout, profile management, favourite list
 ![Profile management](https://user-images.githubusercontent.com/43483189/89641556-339e1d80-d8b2-11ea-8327-d0480c545aa9.png)
